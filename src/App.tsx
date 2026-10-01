@@ -14,8 +14,6 @@ function App() {
 
       <ProductCardWithType name="Monitor" price={199} description="27 inch, 144Hz" />
 
-      {/* 4. Break it on purpose: remove the comment below to see the error.
-          Type 'string' is not assignable to type 'number'. */}
 
       {/* <ProductCard name="Sticker" price="free" /> */}
     </>
