@@ -1,16 +1,17 @@
 import './App.css'
-import Counter from './components/Counter'
-import UserProfile from './components/UserProfile'
-import TodoList from './components/TodoList'
-import BreakTheTypes from './components/BreakTheTypes'
+import EmailForm from './components/EmailForm'
+import AgeForm from './components/AgeForm'
+import ContactForm from './components/ContactForm'
 
 function App() {
   return (
     <>
-      <Counter />
-      <UserProfile />
-      <TodoList />
-      <BreakTheTypes />
+      
+      <EmailForm onSubmit={(email) => console.log('Email:', email)} />
+    
+      <AgeForm onSubmit={(age) => console.log('Age:', age)} />
+
+      <ContactForm onSubmit={(data) => console.log('Contact:', data.name, data.email)} />
     </>
   )
 }
